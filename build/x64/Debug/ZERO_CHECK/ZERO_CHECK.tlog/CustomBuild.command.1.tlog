@@ -1,0 +1,10 @@
+^C:\USERS\LATITUDE 5550\DESKTOP\FILE_MANAGER\BUILD\CMAKEFILES\3FFBF6CE2B82F8295773CD6D6A3BB568\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Latitude 5550/Desktop/file_manager" "-BC:/Users/Latitude 5550/Desktop/file_manager/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Latitude 5550/Desktop/file_manager/build/FileManager.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
